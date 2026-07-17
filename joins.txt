@@ -1,0 +1,50 @@
+
+mysql> create database student;
+Query OK, 1 row affected (0.01 sec)
+
+mysql>  use student;
+Database changed
+mysql> CREATE TABLE Student (
+    ->     StudentID INT PRIMARY KEY,
+    ->     Name VARCHAR(50),
+    ->     City VARCHAR(50)
+    -> );
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> CREATE TABLE Marks (
+    ->     StudentID INT,
+    ->     Subject VARCHAR(50),
+    ->     Marks INT
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> INSERT INTO Student VALUES
+    -> (1, 'Amit', 'Raipur'),
+    -> (2, 'Neha', 'Bilaspur'),
+    -> (3, 'Rohan', 'Durg'),
+    -> (4, 'Priya', 'Raigarh');
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> INSERT INTO Marks VALUES
+    -> (1, 'Math', 85),
+    -> (2, 'Math', 90),
+    -> (3, 'Math', 75),
+    -> (5, 'Math', 88);
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> SELECT Student.StudentID, Student.Name, Marks.Subject, Marks.Marks
+    -> FROM Student
+    -> INNER JOIN Marks
+    -> ON Student.StudentID = Marks.StudentID;
++-----------+-------+---------+-------+
+| StudentID | Name  | Subject | Marks |
++-----------+-------+---------+-------+
+|         1 | Amit  | Math    |    85 |
+|         2 | Neha  | Math    |    90 |
+|         3 | Rohan | Math    |    75 |
++-----------+-------+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql>

@@ -152,3 +152,17 @@ mysql> select *from users;
 +---------------------+----+------------------+--------+--------+---------------------+
 2 rows in set (0.00 sec)
 
+mysql> insert into users(name, email,gender,date_of_birth)values('bharat','bharat@gmail.com','male','2003-01-04'),('rishabh','rishabh@gmail.com','male','2000-03-01');
+Query OK, 2 rows affected (0.01 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select *from users;
++---------------------+----+-------------------+---------+--------+---------------------+
+| date_of_birth       | id | email             | name    | gender | created_at          |
++---------------------+----+-------------------+---------+--------+---------------------+
+| 2015-07-13 00:00:00 |  1 | nitesh@gmail.com  | nitesh  | male   | 2026-07-17 13:21:56 |
+| 2010-10-15 00:00:00 |  2 | niraj@gmail.com   | niraj   | male   | 2026-07-17 13:32:09 |
+| 2003-01-04 00:00:00 |  3 | bharat@gmail.com  | bharat  | male   | 2026-07-17 14:05:11 |
+| 2000-03-01 00:00:00 |  4 | rishabh@gmail.com | rishabh | male   | 2026-07-17 14:05:11 |
++---------------------+----+-------------------+---------+--------+---------------------+
+4 rows in set (0.00 sec)

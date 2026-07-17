@@ -166,3 +166,202 @@ mysql> select *from users;
 | 2000-03-01 00:00:00 |  4 | rishabh@gmail.com | rishabh | male   | 2026-07-17 14:05:11 |
 +---------------------+----+-------------------+---------+--------+---------------------+
 4 rows in set (0.00 sec)
+
+
+INSERT INTO users (date_of_birth, email, name, gender) VALUES
+('1995-01-15 00:00:00','aarav.sharma@example.com','Aarav Sharma','male'),
+('1994-02-20 00:00:00','vivaan.patel@example.com','Vivaan Patel','male'),
+('1993-03-10 00:00:00','aditya.verma@example.com','Aditya Verma','male'),
+('1992-04-12 00:00:00','krishna.yadav@example.com','Krishna Yadav','male'),
+('1991-05-18 00:00:00','arjun.singh@example.com','Arjun Singh','male'),
+('1990-06-25 00:00:00','rahul.gupta@example.com','Rahul Gupta','male'),
+('1996-07-08 00:00:00','rohit.mishra@example.com','Rohit Mishra','male'),
+('1994-08-14 00:00:00','mohit.agarwal@example.com','Mohit Agarwal','male'),
+('1993-09-30 00:00:00','aman.joshi@example.com','Aman Joshi','male'),
+('1992-10-11 00:00:00','sachin.saxena@example.com','Sachin Saxena','male'),
+('1995-11-21 00:00:00','vikas.kumar@example.com','Vikas Kumar','male'),
+('1994-12-09 00:00:00','deepak.soni@example.com','Deepak Soni','male'),
+('1993-01-28 00:00:00','manish.thakur@example.com','Manish Thakur','male'),
+('1992-02-19 00:00:00','nitin.chauhan@example.com','Nitin Chauhan','male'),
+('1991-03-15 00:00:00','harsh.rathore@example.com','Harsh Rathore','male'),
+('1990-04-18 00:00:00','lokesh.tiwari@example.com','Lokesh Tiwari','male'),
+('1996-05-20 00:00:00','ankit.dubey@example.com','Ankit Dubey','male'),
+('1995-06-22 00:00:00','gaurav.pandey@example.com','Gaurav Pandey','male'),
+('1994-07-10 00:00:00','abhishek.sahu@example.com','Abhishek Sahu','male'),
+('1993-08-05 00:00:00','shivam.nigam@example.com','Shivam Nigam','male'),
+
+('1995-01-05 00:00:00','ananya.sharma@example.com','Ananya Sharma','female'),
+('1994-02-07 00:00:00','priya.verma@example.com','Priya Verma','female'),
+('1993-03-09 00:00:00','neha.gupta@example.com','Neha Gupta','female'),
+('1992-04-11 00:00:00','pooja.yadav@example.com','Pooja Yadav','female'),
+('1991-05-13 00:00:00','kavya.patel@example.com','Kavya Patel','female'),
+('1990-06-15 00:00:00','riya.singh@example.com','Riya Singh','female'),
+('1996-07-17 00:00:00','isha.mishra@example.com','Isha Mishra','female'),
+('1995-08-19 00:00:00','meera.jain@example.com','Meera Jain','female'),
+('1994-09-21 00:00:00','nisha.agarwal@example.com','Nisha Agarwal','female'),
+('1993-10-23 00:00:00','sneha.shukla@example.com','Sneha Shukla','female'),
+('1992-11-25 00:00:00','muskan.sharma@example.com','Muskan Sharma','female'),
+('1991-12-27 00:00:00','payal.singh@example.com','Payal Singh','female'),
+('1990-01-29 00:00:00','komal.gupta@example.com','Komal Gupta','female'),
+('1996-02-14 00:00:00','simran.verma@example.com','Simran Verma','female'),
+('1995-03-18 00:00:00','nikita.yadav@example.com','Nikita Yadav','female'),
+('1994-04-20 00:00:00','shruti.patel@example.com','Shruti Patel','female'),
+('1993-05-22 00:00:00','rashmi.joshi@example.com','Rashmi Joshi','female'),
+('1992-06-24 00:00:00','tanvi.mishra@example.com','Tanvi Mishra','female'),
+('1991-07-26 00:00:00','sakshi.jain@example.com','Sakshi Jain','female'),
+('1990-08-28 00:00:00','bhavna.saxena@example.com','Bhavna Saxena','female'),
+
+('1998-01-10 00:00:00','alex.taylor@example.com','Alex Taylor','other'),
+('1997-02-12 00:00:00','jordan.lee@example.com','Jordan Lee','other'),
+('1996-03-14 00:00:00','casey.morgan@example.com','Casey Morgan','other'),
+('1995-04-16 00:00:00','sam.rivera@example.com','Sam Rivera','other'),
+('1994-05-18 00:00:00','riley.clark@example.com','Riley Clark','other'),
+('1993-06-20 00:00:00','taylor.green@example.com','Taylor Green','other'),
+('1992-07-22 00:00:00','jamie.walker@example.com','Jamie Walker','other'),
+('1991-08-24 00:00:00','sky.parker@example.com','Sky Parker','other'),
+('1990-09-26 00:00:00','dev.reed@example.com','Dev Reed','other'),
+('1989-10-28 00:00:00','kai.brooks@example.com','Kai Brooks','other');
+
+
+
+mysql> select *from users;
++---------------------+-----+---------------------------+---------------+--------+---------------------+
+| date_of_birth       | id  | email                     | name          | gender | created_at          |
++---------------------+-----+---------------------------+---------------+--------+---------------------+
+| 1995-01-15 00:00:00 |  95 | aarav.sharma@example.com  | Aarav Sharma  | male   | 2026-07-17 14:32:39 |
+| 1994-02-20 00:00:00 |  96 | vivaan.patel@example.com  | Vivaan Patel  | male   | 2026-07-17 14:32:39 |
+| 1993-03-10 00:00:00 |  97 | aditya.verma@example.com  | Aditya Verma  | male   | 2026-07-17 14:32:39 |
+| 1992-04-12 00:00:00 |  98 | krishna.yadav@example.com | Krishna Yadav | male   | 2026-07-17 14:32:39 |
+| 1991-05-18 00:00:00 |  99 | arjun.singh@example.com   | Arjun Singh   | male   | 2026-07-17 14:32:39 |
+| 1990-06-25 00:00:00 | 100 | rahul.gupta@example.com   | Rahul Gupta   | male   | 2026-07-17 14:32:39 |
+| 1996-07-08 00:00:00 | 101 | rohit.mishra@example.com  | Rohit Mishra  | male   | 2026-07-17 14:32:39 |
+| 1994-08-14 00:00:00 | 102 | mohit.agarwal@example.com | Mohit Agarwal | male   | 2026-07-17 14:32:39 |
+| 1993-09-30 00:00:00 | 103 | aman.joshi@example.com    | Aman Joshi    | male   | 2026-07-17 14:32:39 |
+| 1992-10-11 00:00:00 | 104 | sachin.saxena@example.com | Sachin Saxena | male   | 2026-07-17 14:32:39 |
+| 1995-11-21 00:00:00 | 105 | vikas.kumar@example.com   | Vikas Kumar   | male   | 2026-07-17 14:32:39 |
+| 1994-12-09 00:00:00 | 106 | deepak.soni@example.com   | Deepak Soni   | male   | 2026-07-17 14:32:39 |
+| 1993-01-28 00:00:00 | 107 | manish.thakur@example.com | Manish Thakur | male   | 2026-07-17 14:32:39 |
+| 1992-02-19 00:00:00 | 108 | nitin.chauhan@example.com | Nitin Chauhan | male   | 2026-07-17 14:32:39 |
+| 1991-03-15 00:00:00 | 109 | harsh.rathore@example.com | Harsh Rathore | male   | 2026-07-17 14:32:39 |
+| 1990-04-18 00:00:00 | 110 | lokesh.tiwari@example.com | Lokesh Tiwari | male   | 2026-07-17 14:32:39 |
+| 1996-05-20 00:00:00 | 111 | ankit.dubey@example.com   | Ankit Dubey   | male   | 2026-07-17 14:32:39 |
+| 1995-06-22 00:00:00 | 112 | gaurav.pandey@example.com | Gaurav Pandey | male   | 2026-07-17 14:32:39 |
+| 1994-07-10 00:00:00 | 113 | abhishek.sahu@example.com | Abhishek Sahu | male   | 2026-07-17 14:32:39 |
+| 1993-08-05 00:00:00 | 114 | shivam.nigam@example.com  | Shivam Nigam  | male   | 2026-07-17 14:32:39 |
+| 1995-01-05 00:00:00 | 115 | ananya.sharma@example.com | Ananya Sharma | female | 2026-07-17 14:32:39 |
+| 1994-02-07 00:00:00 | 116 | priya.verma@example.com   | Priya Verma   | female | 2026-07-17 14:32:39 |
+| 1993-03-09 00:00:00 | 117 | neha.gupta@example.com    | Neha Gupta    | female | 2026-07-17 14:32:39 |
+| 1992-04-11 00:00:00 | 118 | pooja.yadav@example.com   | Pooja Yadav   | female | 2026-07-17 14:32:39 |
+| 1991-05-13 00:00:00 | 119 | kavya.patel@example.com   | Kavya Patel   | female | 2026-07-17 14:32:39 |
+| 1990-06-15 00:00:00 | 120 | riya.singh@example.com    | Riya Singh    | female | 2026-07-17 14:32:39 |
+| 1996-07-17 00:00:00 | 121 | isha.mishra@example.com   | Isha Mishra   | female | 2026-07-17 14:32:39 |
+| 1995-08-19 00:00:00 | 122 | meera.jain@example.com    | Meera Jain    | female | 2026-07-17 14:32:39 |
+| 1994-09-21 00:00:00 | 123 | nisha.agarwal@example.com | Nisha Agarwal | female | 2026-07-17 14:32:39 |
+| 1993-10-23 00:00:00 | 124 | sneha.shukla@example.com  | Sneha Shukla  | female | 2026-07-17 14:32:39 |
+| 1992-11-25 00:00:00 | 125 | muskan.sharma@example.com | Muskan Sharma | female | 2026-07-17 14:32:39 |
+| 1991-12-27 00:00:00 | 126 | payal.singh@example.com   | Payal Singh   | female | 2026-07-17 14:32:39 |
+| 1990-01-29 00:00:00 | 127 | komal.gupta@example.com   | Komal Gupta   | female | 2026-07-17 14:32:39 |
+| 1996-02-14 00:00:00 | 128 | simran.verma@example.com  | Simran Verma  | female | 2026-07-17 14:32:39 |
+| 1995-03-18 00:00:00 | 129 | nikita.yadav@example.com  | Nikita Yadav  | female | 2026-07-17 14:32:39 |
+| 1994-04-20 00:00:00 | 130 | shruti.patel@example.com  | Shruti Patel  | female | 2026-07-17 14:32:39 |
+| 1993-05-22 00:00:00 | 131 | rashmi.joshi@example.com  | Rashmi Joshi  | female | 2026-07-17 14:32:39 |
+| 1992-06-24 00:00:00 | 132 | tanvi.mishra@example.com  | Tanvi Mishra  | female | 2026-07-17 14:32:39 |
+| 1991-07-26 00:00:00 | 133 | sakshi.jain@example.com   | Sakshi Jain   | female | 2026-07-17 14:32:39 |
+| 1990-08-28 00:00:00 | 134 | bhavna.saxena@example.com | Bhavna Saxena | female | 2026-07-17 14:32:39 |
+| 1998-01-10 00:00:00 | 135 | alex.taylor@example.com   | Alex Taylor   | other  | 2026-07-17 14:32:39 |
+| 1997-02-12 00:00:00 | 136 | jordan.lee@example.com    | Jordan Lee    | other  | 2026-07-17 14:32:39 |
+| 1996-03-14 00:00:00 | 137 | casey.morgan@example.com  | Casey Morgan  | other  | 2026-07-17 14:32:39 |
+| 1995-04-16 00:00:00 | 138 | sam.rivera@example.com    | Sam Rivera    | other  | 2026-07-17 14:32:39 |
+| 1994-05-18 00:00:00 | 139 | riley.clark@example.com   | Riley Clark   | other  | 2026-07-17 14:32:39 |
+| 1993-06-20 00:00:00 | 140 | taylor.green@example.com  | Taylor Green  | other  | 2026-07-17 14:32:39 |
+| 1992-07-22 00:00:00 | 141 | jamie.walker@example.com  | Jamie Walker  | other  | 2026-07-17 14:32:39 |
+| 1991-08-24 00:00:00 | 142 | sky.parker@example.com    | Sky Parker    | other  | 2026-07-17 14:32:39 |
+| 1990-09-26 00:00:00 | 143 | dev.reed@example.com      | Dev Reed      | other  | 2026-07-17 14:32:39 |
+| 1989-10-28 00:00:00 | 144 | kai.brooks@example.com    | Kai Brooks    | other  | 2026-07-17 14:32:39 |
++---------------------+-----+---------------------------+---------------+--------+---------------------+
+
+
+mysql> select name,gender from users;
++---------------+--------+
+| name          | gender |
++---------------+--------+
+| Aarav Sharma  | male   |
+| Vivaan Patel  | male   |
+| Aditya Verma  | male   |
+| Krishna Yadav | male   |
+| Arjun Singh   | male   |
+| Rahul Gupta   | male   |
+| Rohit Mishra  | male   |
+| Mohit Agarwal | male   |
+| Aman Joshi    | male   |
+| Sachin Saxena | male   |
+| Vikas Kumar   | male   |
+| Deepak Soni   | male   |
+| Manish Thakur | male   |
+| Nitin Chauhan | male   |
+| Harsh Rathore | male   |
+| Lokesh Tiwari | male   |
+| Ankit Dubey   | male   |
+| Gaurav Pandey | male   |
+| Abhishek Sahu | male   |
+| Shivam Nigam  | male   |
+| Ananya Sharma | female |
+| Priya Verma   | female |
+| Neha Gupta    | female |
+| Pooja Yadav   | female |
+| Kavya Patel   | female |
+| Riya Singh    | female |
+| Isha Mishra   | female |
+| Meera Jain    | female |
+| Nisha Agarwal | female |
+| Sneha Shukla  | female |
+| Muskan Sharma | female |
+| Payal Singh   | female |
+| Komal Gupta   | female |
+| Simran Verma  | female |
+| Nikita Yadav  | female |
+| Shruti Patel  | female |
+| Rashmi Joshi  | female |
+| Tanvi Mishra  | female |
+| Sakshi Jain   | female |
+| Bhavna Saxena | female |
+| Alex Taylor   | other  |
+| Jordan Lee    | other  |
+| Casey Morgan  | other  |
+| Sam Rivera    | other  |
+| Riley Clark   | other  |
+| Taylor Green  | other  |
+| Jamie Walker  | other  |
+| Sky Parker    | other  |
+| Dev Reed      | other  |
+| Kai Brooks    | other  |
++---------------+--------+
+50 rows in set (0.00 sec)
+
+
+
+mysql> select *from users where gender='male';
++---------------------+-----+---------------------------+---------------+--------+---------------------+
+| date_of_birth       | id  | email                     | name          | gender | created_at          |
++---------------------+-----+---------------------------+---------------+--------+---------------------+
+| 1995-01-15 00:00:00 |  95 | aarav.sharma@example.com  | Aarav Sharma  | male   | 2026-07-17 14:32:39 |
+| 1994-02-20 00:00:00 |  96 | vivaan.patel@example.com  | Vivaan Patel  | male   | 2026-07-17 14:32:39 |
+| 1993-03-10 00:00:00 |  97 | aditya.verma@example.com  | Aditya Verma  | male   | 2026-07-17 14:32:39 |
+| 1992-04-12 00:00:00 |  98 | krishna.yadav@example.com | Krishna Yadav | male   | 2026-07-17 14:32:39 |
+| 1991-05-18 00:00:00 |  99 | arjun.singh@example.com   | Arjun Singh   | male   | 2026-07-17 14:32:39 |
+| 1990-06-25 00:00:00 | 100 | rahul.gupta@example.com   | Rahul Gupta   | male   | 2026-07-17 14:32:39 |
+| 1996-07-08 00:00:00 | 101 | rohit.mishra@example.com  | Rohit Mishra  | male   | 2026-07-17 14:32:39 |
+| 1994-08-14 00:00:00 | 102 | mohit.agarwal@example.com | Mohit Agarwal | male   | 2026-07-17 14:32:39 |
+| 1993-09-30 00:00:00 | 103 | aman.joshi@example.com    | Aman Joshi    | male   | 2026-07-17 14:32:39 |
+| 1992-10-11 00:00:00 | 104 | sachin.saxena@example.com | Sachin Saxena | male   | 2026-07-17 14:32:39 |
+| 1995-11-21 00:00:00 | 105 | vikas.kumar@example.com   | Vikas Kumar   | male   | 2026-07-17 14:32:39 |
+| 1994-12-09 00:00:00 | 106 | deepak.soni@example.com   | Deepak Soni   | male   | 2026-07-17 14:32:39 |
+| 1993-01-28 00:00:00 | 107 | manish.thakur@example.com | Manish Thakur | male   | 2026-07-17 14:32:39 |
+| 1992-02-19 00:00:00 | 108 | nitin.chauhan@example.com | Nitin Chauhan | male   | 2026-07-17 14:32:39 |
+| 1991-03-15 00:00:00 | 109 | harsh.rathore@example.com | Harsh Rathore | male   | 2026-07-17 14:32:39 |
+| 1990-04-18 00:00:00 | 110 | lokesh.tiwari@example.com | Lokesh Tiwari | male   | 2026-07-17 14:32:39 |
+| 1996-05-20 00:00:00 | 111 | ankit.dubey@example.com   | Ankit Dubey   | male   | 2026-07-17 14:32:39 |
+| 1995-06-22 00:00:00 | 112 | gaurav.pandey@example.com | Gaurav Pandey | male   | 2026-07-17 14:32:39 |
+| 1994-07-10 00:00:00 | 113 | abhishek.sahu@example.com | Abhishek Sahu | male   | 2026-07-17 14:32:39 |
+| 1993-08-05 00:00:00 | 114 | shivam.nigam@example.com  | Shivam Nigam  | male   | 2026-07-17 14:32:39 |
++---------------------+-----+---------------------------+---------------+--------+---------------------+

@@ -674,3 +674,13 @@ Records: 1  Duplicates: 0  Warnings: 0
 mysql> insert into users(name, email,gender,date_of_birth,status) values('bhanu','bhanu@gmail.com','male','1996-03-04',15);
 ERROR 3819 (HY000): Check constraint 'users_chk_1' is violated.
 mysql>
+
+mysql> select *from users;
++---------+--------+------------------+--------+---------------+---------------------+--------+
+| roll_no | name   | email            | gender | date_of_birth | created_at          | status |
++---------+--------+------------------+--------+---------------+---------------------+--------+
+|       1 | nitesh | nitesh@gmail.com | male   | 1995-01-24    | 2026-07-20 16:05:54 |   NULL |
+|       2 | nisha  | nisha@gmail.com  | female | 1990-03-04    | 2026-07-20 16:11:43 |     25 |
+|       3 | bhanu  | bhanu@gmail.com  | male   | 1996-03-04    | 2026-07-20 16:19:46 |     27 |
++---------+--------+------------------+--------+---------------+---------------------+--------+
+3 rows in set (0.00 sec)

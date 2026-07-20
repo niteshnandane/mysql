@@ -684,3 +684,14 @@ mysql> select *from users;
 |       3 | bhanu  | bhanu@gmail.com  | male   | 1996-03-04    | 2026-07-20 16:19:46 |     27 |
 +---------+--------+------------------+--------+---------------+---------------------+--------+
 3 rows in set (0.00 sec)
+
+
+create table users(
+     roll_no int AUTO_INCREMENT PRIMARY KEY,
+     name varchar(255) NOT NULL,
+     email varchar(255) UNIQUE NOT NULL,
+     gender ENUM('male','female'),
+     date_of_birth DATE,
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    age int  check(age>=18
+     ));

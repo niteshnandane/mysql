@@ -656,3 +656,21 @@ mysql> select *from users where gender='male' or date_of_birth>'1995-04-15' orde
 | 1996-07-08 00:00:00 | 101 | rohit.mishra@example.com | Rohit Mishra | male   | 2026-07-17 14:32:39 |
 | 1996-05-20 00:00:00 | 111 | ankit.dubey@example.com  | Ankit Dubey  | male   | 2026-07-17 14:32:39 |
 +---------------------+-----+--------------------------+--------------+--------+---------------------+
+
+
+mysql> alter table users add status int check(status>18);
+Query OK, 1 row affected (0.08 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+
++---------+--------+------------------+--------+---------------+---------------------+--------+
+| roll_no | name   | email            | gender | date_of_birth | created_at          | status |
++---------+--------+------------------+--------+---------------+---------------------+--------+
+|       1 | nitesh | nitesh@gmail.com | male   | 1995-01-24    | 2026-07-20 16:05:54 |   NULL |
+|       2 | nisha  | nisha@gmail.com  | female | 1990-03-04    | 2026-07-20 16:11:43 |     25 |
++---------+--------+------------------+--------+---------------+---------------------+--------+
+2 rows in set (0.00 sec)
+
+mysql> insert into users(name, email,gender,date_of_birth,status) values('bhanu','bhanu@gmail.com','male','1996-03-04',15);
+ERROR 3819 (HY000): Check constraint 'users_chk_1' is violated.
+mysql>

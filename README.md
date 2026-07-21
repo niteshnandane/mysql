@@ -695,3 +695,8 @@ create table users(
      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     age int  check(age>=18
      ));
+
+
+     
+mysql> rename table users2 to programmer;
+Query OK, 0 rows affected (0.02 sec)
